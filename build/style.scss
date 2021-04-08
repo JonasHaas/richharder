@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+
+$border-body: 5px dashed hotpink;
+$border-container: 5px solid yellow;
+$border-container-inner: 2px dashed deepskyblue;
+$border-element: 2px dotted darkorchid;
+
+
+$white: #fff;
+$black: #000;
+$background-primary: #1E2140;
+$bg-secondary: #161932;
+$text-primary: #D7E0FF;
+
+$ffi: 'FontAwesome';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: $text-primary;
+}
+
+html body {
+    min-height: 100vh;
+    width: 100%;
+    background: $background-primary;
+    border: 5px dashed hotpink;
+}
+
+input,
+button {
+    color: black;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 5px solid yellow;
+    height: 100%;
+}
+
+.container-inputs {
+    border: 2px dotted darkorchid;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-inputs .row > label {
+    display: block;
+}
+
+.container-inputs .row > input {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        transition: all .3s ease;
+        i {
+            font-size: 30px;
+            padding: 20px 30px 30px 0;
+        }
+        &:hover {
+            opacity: .2;
+        }
+    }
+}

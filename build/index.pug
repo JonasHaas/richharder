@@ -1,0 +1,43 @@
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png")
+        link(rel="stylesheet" href="./css/style.css")
+    body
+        .app
+            .container-inputs
+                .row
+                    label(for="#input-duration") Dauer*
+                    input(type="text")#input-duration
+                .row
+                    label(for="#input-startmoney") Startkapital
+                    input(type="text")#input-startmoney
+                .row
+                    label(for="#input-rate") Rate*
+                    input(type="text")#input-rate
+                .row
+                    label(for="#input-increase") Steigerung
+                    input(type="text")#input-increase
+                .row                    
+                    label(for="#input-intrest") Rendite
+                    input(type="text")#input-intrest
+                .row                   
+                    label(for="#input-inflation") Inflation
+                    input(type="checkbox")#input-inflation
+                .row
+                button#submit Berechnen
+
+
+
+        .footer
+            .github
+                a(href="https://codepen.io/Jonashaas" target="_blank" title="codepen") 
+                    i.fab.fa-codepen
+                a(href="https://github.com/JonasHaas" target="_blank" title="github")
+                    i.fab.fa-github
+        script(src="https://kit.fontawesome.com/edcdc7b18e.js" crossorigin="anonymous")
+        script(src="./js/app.dev.js" async defer)
